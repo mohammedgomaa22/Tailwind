@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind App</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Start Scroll Up -->
+    <button class="scrolling main-btn fixed bottom-7 -right-20 px-3 py-2 rounded-xl text-xl font-medium duration-500 z-[222]">Up</button>
+    <!-- End Scroll Up -->
+    <!-- Start Navbar -->
+    <nav class="navbar sticky top-0 z-[111] overflow-hidden transition-colors duration-500">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+                <!-- Start Logo -->
+                <div class="flex flex-shrink-0 items-center cursor-pointer">
+                    <img class="block h-8 w-auto lg:hidden" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                        alt="Your Company">
+                    <img class="hidden h-8 w-auto lg:block" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                        alt="Your Company">
+                </div>
+                <!-- End Logo -->
+                <!-- Start Mode -->
+                <div class="mode w-9 h-9 ml-2 flex justify-center items-center rounded-full overflow-hidden text-2xl cursor-pointer duration-500 absolute right-1/2 translate-x-1/2 sm:right-0 sm:translate-x-0">
+                    <i class="fa-regular fa-sun"></i>
+                </div>
+                <!-- End Mode -->
+                <!-- Start Nav -->
+                <div class="flex flex-1 items-center justify-center sm:items-stretch">
+                    <div class="hidden sm:ml-6 sm:block">
+                        <div class="ul flex  lg:gap-7">
+                            <a href="#" class="active rounded-md px-3 py-2 text-sm font-medium duration-300"
+                                aria-current="page">Home</a>
+                            <a href="#features"
+                                class="rounded-md px-3 py-2 text-sm font-medium duration-300">Features</a>
+                            <a href="#portfolio"
+                                class="rounded-md px-3 py-2 text-sm font-medium duration-300">Portfolio</a>
+                            <a href="#about"
+                                class="rounded-md px-3 py-2 text-sm font-medium duration-300">About</a>
+                            <a href="#contact"
+                                class="rounded-md px-3 py-2 text-sm font-medium duration-300">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Nav -->
+                <!-- Start Search -->
+                <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                    <div class="search hidden md:block mr-11">
+                        <input class="outline-none text-base px-3 py-2 rounded-md bg-gray-800 hover:bg-gray-900 duration-500 text-white" type="search" placeholder="Search" aria-label="Search">
+                    </div>
+                </div>
+                <!-- End Search -->
+                <!-- Mobile menu button-->
+                <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
+                    <button type="button"
+                        class="toggle-btn inline-flex items-center justify-center rounded-md p-2 text-gray-500 hover:bg-gray-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white duration-300"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+
+                        <!-- Icon when menu is closed. Menu open: "hidden", Menu closed: "block"-->
+                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                        <!-- Icon when menu is open. Menu open: "block", Menu closed: "hidden" -->
+                        
+                        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden relative" id="mobile-menu">
+            <div class="ul toggle-nav opacity-0 absolute -right-5 w-0 overflow-hidden space-y-1 px-2 pb-3 pt-2 duration-700">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#" class="active block rounded-md px-3 py-2 text-base font-medium duration-300"
+                    aria-current="page">Home</a>
+                <a href="#features"
+                    class="block rounded-md px-3 py-2 text-base font-medium duration-300">Features</a>
+                <a href="#portfolio"
+                    class="block rounded-md px-3 py-2 text-base font-medium duration-300">Portfolio</a>
+                <a href="#about"
+                    class="block rounded-md px-3 py-2 text-base font-medium duration-300">About</a>
+                <a href="#contact"
+                    class="block rounded-md px-3 py-2 text-base font-medium duration-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- ------------------------------------------------------ -->
+    <!-- End Navbar -->
+    <!-- Start Landing -->
+    <div class="landing flex justify-center items-center flex-col transition-colors duration-500">
+        <div class="text text-center">
+            <h1 class="m-0 text-4xl font-bold">Taste the Creativity</h1>
+            <p class="text-gray-500 mt-2 font-medium">We make awesome graphic and web design</p>
+        </div>
+        <button class="btn main-btn  rounded-3xl mt-9">
+            <a class="block h-full w-full px-3 py-2 p-4" href="#portfolio">Get Started</a>
+        </button>
+    </div>
+    <!-- End Landing -->
+    <!-- Start Features -->
+    <div class="features pt-20 pb-20 transition-colors duration-500" id="features">
+        <div class="container mx-auto px-5">
+            <div class="main-title mb-20 relative text-center">
+                <img class="mb-4 mx-auto" src="imgs/title.png" alt="title">
+                <h2 class="text-3xl font-medium mt-5 mb-3">We are Good at</h2>
+                <p class="uppercase text-gray-500">Some of these stuff under graphic</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Col-1 -->
+                <div class="text-center">
+                    <div class="feat">
+                        <div class="icons relative">
+                            <i class="fa-solid fa-1 absolute bottom-0 number opacity-100"></i>
+                            <i class="fa-solid fa-pencil absolute bottom-0 icon"></i>
+                        </div>
+                        <h4 class="uppercase mt-5 mb-3 font-[500] text-2xl">Graphic Design</h4>
+                        <p class="text-gray-500 leading-loose font-[500]">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+                    </div>
+                </div>
+                <!-- Col-2 -->
+                <div class="text-center">
+                    <div class="feat">
+                        <div class="icons relative">
+                            <i class="fa-solid fa-2 absolute bottom-0 number opacity-100"></i>
+                            <i class="fa-solid fa-display absolute bottom-0 icon"></i>
+                        </div>
+                        <h4 class="uppercase mt-5 mb-3 font-[500] text-2xl">Graphic Design</h4>
+                        <p class="text-gray-500 leading-loose font-[500]">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+                    </div>
+                </div>
+                <!-- Col-3 -->
+                <div class="text-center">
+                    <div class="feat">
+                        <div class="icons relative">
+                            <i class="fa-solid fa-3 absolute bottom-0 number opacity-100"></i>
+                            <i class="fa-solid fa-plug absolute bottom-0 icon"></i>
+                        </div>
+                        <h4 class="uppercase mt-5 mb-3 font-[500] text-2xl">Graphic Design</h4>
+                        <p class="text-gray-500 leading-loose font-[500]">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo,
+                            lacinia eget consectetur sed, convallis at tellus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Features -->
+    <!-- Start Portfolio -->
+    <div class="portfolio pt-20 pb-20 transition-colors duration-500 bg-li" id="portfolio">
+        <div class="container mx-auto px-5 text-center">
+            <div class="main-title mb-20 relative text-center">
+                <img class="mb-4 mx-auto" src="imgs/title.png" alt="title">
+                <h2 class="text-3xl font-medium mt-5 mb-3">We Make This</h2>
+                <p class="uppercase text-gray-500">PREPARE TO BE AMAZED</p>
+            </div>
+            <!-- ------------------- -->
+            <ul class="flex gap-2 font-medium justify-center">
+                <li class="active px-3 py-1 rounded-xl duration-300 cursor-pointer">All</li>
+                <li class="px-3 py-1 rounded-xl duration-300 cursor-pointer hover:text-red-600 color-dark">Design</li>
+                <li class="px-3 py-1 rounded-xl duration-300 cursor-pointer hover:text-red-600 color-dark">Code</li>
+                <li class="px-3 py-1 rounded-xl duration-300 cursor-pointer hover:text-red-600 color-dark">Photo</li>
+                <li class="px-3 py-1 rounded-xl duration-300 cursor-pointer hover:text-red-600 color-dark">App</li>
+            </ul>
+            <div class="gallery mt-8 grid justify-center gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                <!-- Box-1 -->
+                <div class="box bg-wh duration-300 p-2 relative overflow-hidden" data-box="Application">
+                    <img class="max-w-full h-auto" src="imgs/port/work-01.jpg" alt="img">
+                </div>
+                <!-- Box-2 -->
+                <div class="box bg-wh duration-300 p-2 relative overflow-hidden" data-box="Application">
+                    <img class="max-w-full h-auto" src="imgs/port/work-02.jpg" alt="img">
+                </div>
+                <!-- Box-3 -->
+                <div class="box bg-wh duration-300 p-2 relative overflow-hidden" data-box="Application">
+                    <img class="max-w-full h-auto" src="imgs/port/work-03.jpg" alt="img">
+                </div>
+                <!-- Box-4 -->
+                <div class="box bg-wh duration-300 p-2 relative overflow-hidden" data-box="Application">
+                    <img class="max-w-full h-auto" src="imgs/port/work-04.jpg" alt="img">
+                </div>
+                <!-- Box-5 -->
+                <div class="box bg-wh duration-300 p-2 relative overflow-hidden" data-box="Application">
+                    <img class="max-w-full h-auto" src="imgs/port/work-05.jpg" alt="img">
+                </div>
+                <!-- Box-6 -->
+                <div class="box bg-wh duration-300 p-2 relative overflow-hidden" data-box="Application">
+                    <img class="max-w-full h-auto" src="imgs/port/work-06.jpg" alt="img">
+                </div>
+                <!-- Box-7 -->
+                <div class="box bg-wh duration-300 p-2 relative overflow-hidden" data-box="Application">
+                    <img class="max-w-full h-auto" src="imgs/port/work-07.jpg" alt="img">
+                </div>
+                <!-- Box-8 -->
+                <div class="box bg-wh duration-300 p-2 relative overflow-hidden" data-box="Application">
+                    <img class="max-w-full h-auto" src="imgs/port/work-08.jpg" alt="img">
+                </div>
+            </div>
+            <button class="main-btn uppercase px-3 py-2 mt-14 rounded-3xl">I want more</button>
+        </div>
+    </div>
+    <!-- End Portfolio -->
+    <!-- Start About -->
+    <div class="about bg-wh pt-20 pb-20 duration-500" id="about">
+        <div class="container mx-auto px-5">
+            <div class="main-title mb-16 relative text-center">
+                <img class="mb-4 mx-auto" src="imgs/title.png" alt="title">
+                <h2 class="text-3xl font-medium mt-5 mb-3">Some Stuff About Us</h2>
+                <p class="uppercase text-gray-500">THE GREAT TEAM</p>
+            </div>
+            <p class="text-gray-500 mx-auto text-center max-w-lg leading-6">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in
+            ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p>
+            <!-- ---------ROW---------- -->
+            <div class="row md:flex gap-5 mt-10">
+                <div class="col-1 md:max-w-lg mx-auto text-center md:text-left mb-8">
+                    <h3 class="color-dark text-2xl font-medium mb-3">Retina Design</h3>
+                    <p class="text-gray-500 leading-6">Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh
+                    pulvinar a.</p>
+                    <p class="text-gray-500 leading-6 mt-5">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p>
+                    <button class="main-btn uppercase px-3 py-2 font-bold rounded-3xl mt-5">order me one</button>
+                </div>
+                <div class="col-2 flex-1">
+                    <img class="max-w-full h-auto" src="imgs/laptop.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About -->
+    <!-- JS File -->
+    <script src="js/main.js"></script>
+</body>
+</html>
