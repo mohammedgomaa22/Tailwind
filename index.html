@@ -19,7 +19,7 @@
 </head>
 <body>
     <!-- Start Scroll Up -->
-    <button class="scrolling main-btn fixed bottom-7 -right-20 px-3 py-2 rounded-xl text-xl font-medium duration-500 z-[222]">Up</button>
+    <button class="scrolling animate-bounce fixed bottom-7 -right-20 px-3 py-2 rounded-xl text-xl font-medium duration-500 z-[222]">Up</button>
     <!-- End Scroll Up -->
     <!-- Start Navbar -->
     <nav class="navbar sticky top-0 z-[111] overflow-hidden transition-colors duration-500">
@@ -50,6 +50,10 @@
                                 class="rounded-md px-3 py-2 text-sm font-medium duration-300">Portfolio</a>
                             <a href="#about"
                                 class="rounded-md px-3 py-2 text-sm font-medium duration-300">About</a>
+                            <a href="#team"
+                                class="rounded-md px-3 py-2 text-sm font-medium duration-300">Team</a>
+                            <a href="#blog"
+                                class="rounded-md px-3 py-2 text-sm font-medium duration-300">Blog</a>
                             <a href="#contact"
                                 class="rounded-md px-3 py-2 text-sm font-medium duration-300">Contact</a>
                         </div>
@@ -99,6 +103,10 @@
                     class="block rounded-md px-3 py-2 text-base font-medium duration-300">Portfolio</a>
                 <a href="#about"
                     class="block rounded-md px-3 py-2 text-base font-medium duration-300">About</a>
+                <a href="#team"
+                    class="block rounded-md px-3 py-2 text-base font-medium duration-300">Team</a>
+                <a href="#blog"
+                    class="block rounded-md px-3 py-2 text-base font-medium duration-300">Blog</a>
                 <a href="#contact"
                     class="block rounded-md px-3 py-2 text-base font-medium duration-300">Contact</a>
             </div>
@@ -107,13 +115,13 @@
     <!-- ------------------------------------------------------ -->
     <!-- End Navbar -->
     <!-- Start Landing -->
-    <div class="landing flex justify-center items-center flex-col transition-colors duration-500">
+    <div class="landing bg-li flex justify-center items-center flex-col transition-colors duration-500">
         <div class="text text-center">
-            <h1 class="m-0 text-4xl font-bold">Taste the Creativity</h1>
+            <h1 class="m-0 text-4xl font-bold color-dark">Taste the Creativity</h1>
             <p class="text-gray-500 mt-2 font-medium">We make awesome graphic and web design</p>
         </div>
-        <button class="btn main-btn  rounded-3xl mt-9">
-            <a class="block h-full w-full px-3 py-2 p-4" href="#portfolio">Get Started</a>
+        <button class="btn">
+            <a class="block main-btn" href="#portfolio">Get Started</a>
         </button>
     </div>
     <!-- End Landing -->
@@ -214,7 +222,7 @@
                     <img class="max-w-full h-auto" src="imgs/port/work-08.jpg" alt="img">
                 </div>
             </div>
-            <button class="main-btn uppercase px-3 py-2 mt-14 rounded-3xl">I want more</button>
+            <button class="main-btn mt-14">I want more</button>
         </div>
     </div>
     <!-- End Portfolio -->
@@ -235,7 +243,7 @@
                     <p class="text-gray-500 leading-6">Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh
                     pulvinar a.</p>
                     <p class="text-gray-500 leading-6 mt-5">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p>
-                    <button class="main-btn uppercase px-3 py-2 font-bold rounded-3xl mt-5">order me one</button>
+                    <button class="main-btn mt-5">order me one</button>
                 </div>
                 <div class="col-2 flex-1">
                     <img class="max-w-full h-auto" src="imgs/laptop.png" alt="">
@@ -244,6 +252,220 @@
         </div>
     </div>
     <!-- End About -->
+    <!-- Start Team -->
+    <div class="team pt-20 pb-20 bg-li duration-500" id="team">
+        <div class="container px-5 mx-auto">
+            <div class="mb-16 w-fit mx-auto relative text-center">
+                <h2 class="text-4xl font-medium mt-5 mb-3 color-gold">Meet The Team</h2>
+                <p class="text-gray-500 max-w-lg">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in
+                ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p>
+            </div>
+            <!-- ----------BOXES-------- -->
+            <div class="row flex gap-5 flex-wrap lg:flex-nowrap justify-center items-center">
+                <!-- COL-1 -->
+                <div class="col-1 max-w-xs rounded-md overflow-hidden border-b-2 border-red-500 hover:-translate-y-4 duration-300">
+                    <div class="content">
+                        <div class="pic">
+                            <img class="max-h-full h-auto" src="imgs/team/team-1.png" alt="">
+                        </div>
+                        <div class="name text-white text-lg font-bold text-center p-3 bg-blue-500">Luke Skywalker</div>
+                        <p class="info px-5 py-6 text-center text-gray-500 bg-wh">“I don't understand how we got by those troops. I thought we were dead.“</p>
+                    </div>
+                </div>
+                <!-- COL-2 -->
+                <div class="col-2 max-w-xs rounded-md overflow-hidden border-b-2 border-red-500 hover:-translate-y-4 duration-300">
+                    <div class="content">
+                        <div class="pic">
+                            <img class="max-h-full h-auto" src="imgs/team/team-2.png" alt="">
+                        </div>
+                        <div class="name text-white text-lg font-bold text-center p-3 bg-blue-500">Luke Skywalker</div>
+                        <p class="info px-5 py-6 text-center text-gray-500 bg-wh">“I don't understand how we got by those troops. I thought we were dead.“</p>
+                    </div>
+                </div>
+                <!-- COL-3 -->
+                <div class="col-3 max-w-xs rounded-md overflow-hidden border-b-2 border-red-500 hover:-translate-y-4 duration-300">
+                    <div class="content">
+                        <div class="pic">
+                            <img class="max-h-full h-auto" src="imgs/team/team-3.png" alt="">
+                        </div>
+                        <div class="name text-white text-lg font-bold text-center p-3 bg-blue-500">Luke Skywalker</div>
+                        <p class="info px-5 py-6 text-center text-gray-500 bg-wh">“I don't understand how we got by those troops. I thought we were dead.“</p>
+                    </div>
+                </div>
+                <!-- COL-4 -->
+                <div class="col-4 max-w-xs rounded-md overflow-hidden border-b-2 border-red-500 hover:-translate-y-4 duration-300">
+                    <div class="content">
+                        <div class="pic">
+                            <img class="max-h-full h-auto" src="imgs/team/team-4.png" alt="">
+                        </div>
+                        <div class="name text-white text-lg font-bold text-center p-3 bg-blue-500">Luke Skywalker</div>
+                        <p class="info px-5 py-6 text-center text-gray-500 bg-wh">“I don't understand how we got by those troops. I thought we were dead.“</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Team -->
+    <!-- Start Logo -->
+    <div class="logos pt-20 pb-20 bg-wh duration-500">
+        <div class="container mx-auto px-5 flex gap-7 justify-evenly items-center flex-wrap md:flex-nowrap">
+            <div class="pic">
+                <img src="imgs/logos/tech-1.png" alt="" class="max-w-full h-auto">
+            </div>
+            <div class="pic">
+                <img src="imgs/logos/tech-2.png" alt="" class="max-w-full h-auto">
+            </div>
+            <div class="pic">
+                <img src="imgs/logos/tech-3.png" alt="" class="max-w-full h-auto">
+            </div>
+            <div class="pic">
+                <img src="imgs/logos/tech-4.png" alt="" class="max-w-full h-auto">
+            </div>
+        </div>
+    </div>
+    <!-- End Logo -->
+    <!-- Start Project now -->
+    <div class="start-pro pt-14 pb-20 bg-dark duration-500">
+        <div class="container px-5 mx-auto text-center">
+            <div class="mb-4 relative text-center">
+                <h2 class="text-4xl font-medium mt-5 mb-3 color-wh">Start Your Project Now</h2>
+                <p class="text-gray-500 font-semibold">Leave your description and we start the engine.Don't worry,you can cancel anytime</p>
+            </div>
+            <button class="main-btn">Start project</button>
+        </div>
+    </div>
+    <!-- End Project now -->
+    <!-- Start Blog -->
+    <div class="blog pt-20 pb-20 bg-wh duration-500" id="blog">
+        <div class="container mx-auto px-5 text-center">
+            <div class="main-title mb-16 relative text-center">
+                <img class="mb-4 mx-auto" src="imgs/title.png" alt="title">
+                <h2 class="text-3xl font-medium mt-5 mb-3">Read Our Blog</h2>
+                <p class="uppercase text-gray-500">NEW STORIES</p>
+            </div>
+            <!-- ---------Boxes---------- -->
+            <div class="row flex justify-evenly gap-6 flex-wrap lg:flex-nowrap">
+                <!-- Col-1 -->
+                <div class="col-1 max-w-md overflow-hidden rounded-md border-b-2 border-red-500 hover:-translate-y-2 duration-300">
+                    <div class="content">
+                        <div class="pic">
+                            <img src="imgs/blog/blog-1.jpg" alt="" class="max-h-full h-auto">
+                        </div>
+                        <div class="info bg-wh p-4">
+                            <span class="text-gray-500 text-lg">Jan 17, 2022</span>
+                            <p class="color-dark text-xl">Some Awesome Blog Title Here</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Col-2 -->
+                <div class="col-2 max-w-md overflow-hidden rounded-md border-b-2 border-red-500 hover:-translate-y-2 duration-300">
+                    <div class="content">
+                        <div class="pic">
+                            <img src="imgs/blog/blog-2.jpg" alt="" class="max-h-full h-auto">
+                        </div>
+                        <div class="info bg-wh p-4">
+                            <span class="text-gray-500 text-lg">Jan 17, 2022</span>
+                            <p class="color-dark text-xl">Some Awesome Blog Title Here</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Col-3 -->
+                <div class="col-3 max-w-md overflow-hidden rounded-md border-b-2 border-red-500 hover:-translate-y-2 duration-300">
+                    <div class="content">
+                        <div class="pic">
+                            <img src="imgs/blog/blog-3.jpg" alt="" class="max-h-full h-auto">
+                        </div>
+                        <div class="info bg-wh p-4">
+                            <span class="text-gray-500 text-lg">Jan 17, 2022</span>
+                            <p class="color-dark text-xl">Some Awesome Blog Title Here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="main-btn">More Stories</button>
+        </div>
+    </div>
+    <!-- End Blog -->
+    <!-- Start Subscribe -->
+    <div class="contact pt-10 pb-10 bg-gold" id="contact">
+        <div class="container mx-auto px-5 flex flex-wrap lg:flex-nowrap gap-6 items-center md:justify-center">
+            <p class="text-gray-900 font-bold text-xl mr-6">Subscribe to our Newsletter:</p>
+            <input class="flex-1 min-w-full sm:min-w-fit sm:max-w-3xl bg-transparent placeholder:text-white outline-none text-white px-2 py-3 font-medium" type="email" placeholder="Enter Email Address">
+            <button class="btn-sub md:mt-5">Subscribe</button>
+        </div>
+    </div>
+    <!-- End Subscribe -->
+    <!-- Start Footer -->
+    <div class="footer pt-20 pb-20 bg-dark duration-500">
+        <div class="container px-5 mx-auto">
+            <div class="row flex flex-wrap justify-center sm:justify-between xl:justify-center gap-10 xl:gap-14">
+                <!-- Col-1 -->
+                <div class="col-1 w-full sm:max-w-sm md:max-w-xs text-center sm:text-left">
+                    <!-- Start Logo -->
+                    <div class="flex flex-shrink-0 items-center cursor-pointer justify-center sm:justify-start">
+                        <img class="block h-8 w-auto lg:hidden" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                            alt="Your Company">
+                        <img class="hidden h-8 w-auto lg:block" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                            alt="Your Company">
+                    </div>
+                    <!-- End Logo -->
+                    <p class="font-medium text-lg text-gray-500 mt-5">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+                    <p class="font-medium text-lg text-gray-500 mt-10">Created By <span class="text-yellow-600 font-bold">M | G</span></p>
+                    <p class="font-medium text-lg text-gray-500 mt-1">&copy 2023 - <span class="text-yellow-600 font-bold">Tailwind</span></p>
+                    
+                </div>
+                <!-- Col-2 -->
+                <div class="col-2 w-full sm:max-w-sm md:max-w-xs text-center sm:text-left">
+                    <ul class="text-gray-500">
+                        <h2 class="color-wh font-bold text-xl tracking-wider mb-3">Links</h2>
+                        <li class="font-bold tracking-wide mb-2">Home</li>
+                        <li class="font-bold tracking-wide mb-2">Our Services</li>
+                        <li class="font-bold tracking-wide mb-2">Portfolio</li>
+                        <li class="font-bold tracking-wide mb-2">Testimonials</li>
+                        <li class="font-bold tracking-wide mb-2">Support</li>
+                        <li class="font-bold tracking-wide mb-2">Terms and</li>
+                        <li class="font-bold tracking-wide mb-2">Condition</li>
+                    </ul>
+                </div>
+                <!-- Col-3 -->
+                <div class="col-3 w-full sm:max-w-sm md:max-w-xs text-center sm:text-left">
+                    <ul class="text-gray-500">
+                        <h2 class="color-wh font-bold text-xl tracking-wider mb-3">About Us</h2>
+                        <li class="font-bold tracking-wide mb-2">Sign In</li>
+                        <li class="font-bold tracking-wide mb-2">Register</li>
+                        <li class="font-bold tracking-wide mb-2">About Us</li>
+                        <li class="font-bold tracking-wide mb-2">Blog</li>
+                        <li class="font-bold tracking-wide mb-2">Contact Us</li>
+                    </ul>
+                </div>
+                <!-- Col-4 -->
+                <div class="col-4 w-full sm:max-w-sm md:max-w-xs text-center sm:text-left">
+                    <h2 class="color-wh font-bold text-xl tracking-wider mb-3">Contact Us</h2>
+                    <p class="font-medium text-lg text-gray-500 mt-5">Get in touch with us via mail phone.We are waiting for your call or message.</p>
+                    <a class="btn-footer" href="#contact">m|g_tailwind@gmail.com</a>
+                    <div class="links flex gap-2 justify-center sm:justify-start mt-5">
+                        <!-- link-1 -->
+                        <a class="bg-blue-700 flex justify-center items-center rounded-full h-9 w-9 text-white" href="#contact">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <!-- link-2 -->
+                        <a class="bg-blue-500 flex justify-center items-center rounded-full h-9 w-9 text-white" href="#contact">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <!-- link-3 -->
+                        <a class="bg-blue-600 flex justify-center items-center rounded-full h-9 w-9 text-white" href="#contact">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <!-- link-4 -->
+                        <a class="bg-red-700 flex justify-center items-center rounded-full h-9 w-9 text-white" href="#contact">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer -->
     <!-- JS File -->
     <script src="js/main.js"></script>
 </body>

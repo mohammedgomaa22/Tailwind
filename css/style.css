@@ -18,6 +18,9 @@
 .bg-dark {
     background-color: var(--dark-color);
 }
+.bg-gold {
+    background-color: var(--gold-color);
+}
 /* Colors */
 .color-wh {
     color: var(--white-color);
@@ -27,6 +30,9 @@
 }
 .color-dark {
     color: var(--dark-color);
+}
+.color-gold {
+    color: var(--gold-color);
 }
 /* End Classes */
 html {
@@ -44,6 +50,11 @@ body {
     background-color: var(--main-color);
     border-color: var(--main-color);
     color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0.70rem 1rem;
+    border-radius: 1.25rem;
+    margin-top: 2.5rem;
 }
 .main-btn:hover {
     background-color: var(--hover-color);
@@ -67,6 +78,12 @@ body {
     height: 2px;
     width: 150px;
     background-color: var(--main-color);
+}
+/* Scrolling */
+.scrolling {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    color: white;
 }
 /* End Component */
 .toggle-nav {
@@ -93,8 +110,6 @@ body {
 /* Start Landing */
 .landing {
     height: calc(100vh - 64px);
-    background-color: #0E0E0E;
-    /* box-shadow: inset 0px 0px 4px 0px #787070; */
 }
 @media(max-width: 992px) {
     .landing {
@@ -108,7 +123,6 @@ body {
 /* Start Features */
 .features {
     background-color: var(--white-color);
-    /* box-shadow:inset 1px 0px 4px 0px #787070; */
 }
 .features .feat h3 {
     color: var(--dark-color);
@@ -158,3 +172,34 @@ body {
     transform: translateX(0);
 }
 /* End Portfolio */
+/* Start Subscribe */
+.contact .btn-sub {
+    background-color: #1E1E1E;
+    color: var(--gold-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0.60rem 1rem;
+    border-radius: 1.25rem;
+}
+.contact .btn-sub:hover {
+    background-color: #0d0c0c;
+}
+.contact input {
+    border-bottom: 1px solid white;
+}
+/* End Subscribe */
+/* Start Footer */
+.footer .btn-footer {
+    background-color: var(--gold-color);
+    color: black;
+    font-weight: 700;
+    margin: 2rem 0;
+    display: block;
+    text-align: center;
+    padding: 0.60rem 1rem;
+    border-radius: 1.25rem;
+}
+.footer .btn-footer:hover {
+    background-color: #e6b103;
+}
+/* End Footer */
